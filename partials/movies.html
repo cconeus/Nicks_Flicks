@@ -1,0 +1,12 @@
+<div class="row review">
+  <div class="col-md-4">
+    <div ui-view="sideBar"></div>
+  </div>
+    <div class="col-md-6 review">
+      Some reviews
+      <form ng-submit="FilmReviewsFactory.addReview()" class="form-group" role="form">
+          <input type="text" ng-model="FilmReviewsFactory.reviewName" rows="3" placeholder="Enter your review here..." class="form-control"><br>
+          <button type="submit" class="btn btn-success">Submit Review</button>
+      </form>
+    </div>
+</div>

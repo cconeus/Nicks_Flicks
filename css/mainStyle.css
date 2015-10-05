@@ -20,3 +20,16 @@ body {
   padding-bottom: 90px;
   padding-top: 90px;
 }
+
+.review {
+  border-left: solid rgb(0, 70, 162) 1px;
+  background-color: rgba(235, 243, 251, 0.9);
+  text-align: center;
+  margin-bottom: auto;
+  margin-top:10px;
+  padding: 10px;
+}
+
+.sideBar {
+  padding: 20px;
+}

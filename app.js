@@ -13,26 +13,32 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
-  $stateProvider.state('courses', {
-    url: "/reviews",
+  $stateProvider.state('movies', {
+    url: "/movies",
     views: {
       'header': {
         templateUrl: 'partials/header.html',
       },
+      'sideBar': {
+        templateUrl: 'partials/sidebar.html',
+      },
       'body': {
-        templateUrl: "partials/reviews.html",
+        templateUrl: "partials/movies.html",
       },
     }
   });
 
-  $stateProvider.state('courses.students', {
+  $stateProvider.state('movies.reviews', {
     url: "/:reviewsId",
     views: {
       'header': {
         templateUrl: 'partials/header.html',
       },
+      'sideBar': {
+        templateUrl: 'partials/sidebar.html',
+      },
       'body': {
-        templateUrl: "partials/courses.students.html",
+        templateUrl: "partials/movies.reviews.html",
         controller: 'StudentsCtrl'
       },
     }
