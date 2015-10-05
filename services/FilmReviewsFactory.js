@@ -1,10 +1,10 @@
 nicksFlicks.factory('FilmReviewsFactory', function FilmReviewsFactory() {
   var factory = {};
-  factory.reviews = [];
+  factory.movies = [];
 
-  factory.addReview = function() {
-    factory.reviews.push({ name: factory.reviewName, id: factory.reviews.length +1, students: [] });
-    factory.reviewName = null;
+  factory.addMovie = function() {
+    factory.movies.push({ name: factory.movieName, id: factory.movies.length +1, reviews: [] });
+    factory.movieName = null;
   };
 
   return factory;
