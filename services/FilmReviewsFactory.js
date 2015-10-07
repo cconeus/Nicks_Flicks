@@ -4,7 +4,13 @@ nicksFlicks.factory('FilmReviewsFactory', function FilmReviewsFactory() {
     movieTitle: "Braveheart",
     reviews: "Some text about Braveheart",
     movieId: 1
-  }];
+  },
+  {
+    movieTitle: "Speed",
+    reviews: "Some review text about the movie Speed",
+    movieId: 2
+  }
+  ];
 
   factory.addReview = function() {
     factory.movies.push({
