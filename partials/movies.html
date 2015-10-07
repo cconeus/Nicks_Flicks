@@ -1,4 +1,6 @@
+
 <div class="row review">
+  <div ui-view="body"></div>
   <div class="col-md-4" ng-show="movies.length">
     <h4>Movie Reviews:</h4>
       <li ng-repeat="item in movies">
@@ -13,5 +15,4 @@
           <button type="submit" class="btn btn-success btn-sm">Submit Review</button>
       </form>
     </div>
-    <div ui-view="body"></div>
 </div>
