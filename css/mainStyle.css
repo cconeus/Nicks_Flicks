@@ -45,5 +45,5 @@ div.header > button:hover {
 
 .nightMode {
     -webkit-filter: invert(100%);
-    align: right;
+    background-color: rgb(41, 41, 41);
 }

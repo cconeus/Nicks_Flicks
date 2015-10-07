@@ -8,7 +8,8 @@
     <div class="col-md-6 review">
       Some reviews
       <form ng-submit="FilmReviewsFactory.addReview()" class="form-group" role="form">
-          <input type="text" ng-model="FilmReviewsFactory.reviewName" placeholder="Enter your review here..." class="form-control">
+          <input type="text" ng-model="FilmReviewsFactory.movieTitle" placeholder="Review Title" class="form-control">
+          <input type="text" ng-model="FilmReviewsFactory.reviews" placeholder="Enter your review here..." class="form-control">
           <button type="submit" class="btn btn-success btn-sm">Submit Review</button>
       </form>
     </div>
