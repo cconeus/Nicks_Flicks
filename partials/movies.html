@@ -2,7 +2,7 @@
   <div class="col-md-4" ng-show="movies.length">
     <h4>Movie Reviews:</h4>
       <li ng-repeat="item in movies">
-      <a ui-sref="movies.movieTitle({ movieId: item.id })">{{ item.movieTitle }}</a>
+      <a ui-sref="movies.reviews({ movieId: item.movieId })">{{ item.movieTitle }}</a>
       </li>
   </div>
     <div class="col-md-6 review">

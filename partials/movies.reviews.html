@@ -1,24 +1,16 @@
-<div ng-show="course.students.length" class="headding row">
-  <h2>Student List for {{ course.name }}</h2>
-  <ul>
-    <li ng-repeat="item in course.students">
-      {{ item.name }}
-    </li>
-  </ul>
-</div>
-
 <div class="row review">
   <div class="col-md-4" ng-show="movies.length">
     <h4>Movie Reviews:</h4>
       <li ng-repeat="item in movies">
-      <a ui-sref="movies.movieTitle({ movieId: item.id })">{{ item.movieTitle }}</a>
+      <a ui-sref="movies.movieTitle({ movieId: item.movieId })">{{ item.movieTitle }}</a>
       </li>
   </div>
-    <div class="col-md-6 review">
-      Some reviews
-      <form ng-submit="FilmReviewsFactory.addReview()" class="form-group" role="form">
-          <input type="text" ng-model="FilmReviewsFactory.reviewName" placeholder="Enter your review here..." class="form-control">
-          <button type="submit" class="btn btn-success btn-sm">Submit Review</button>
-      </form>
-    </div>
-</div>
+  <div class="col-md-8">
+    <h2>{{ movies.movieTitle }}</h2>
+    <p>
+      {{ movies.reviews }}
+    </p>
+    <p>
+      <a ui-sref="movies">Go back</a>
+    </p>
+  </div>

@@ -27,7 +27,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
   });
 
   $stateProvider.state('movies.reviews', {
-    url: "/:reviewsId",
+    url: "/:moviesId",
     views: {
       'header': {
         templateUrl: 'partials/header.html',

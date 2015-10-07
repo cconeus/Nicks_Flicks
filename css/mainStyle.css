@@ -1,6 +1,7 @@
 body {
   font-family: 'ABeeZee', sans-serif;
   background-color: rgb(201, 201, 201);
+  border-radius: 25px;
 }
 div.review > button, .btn {
   border-radius: 13px;
@@ -15,13 +16,14 @@ div.review > button, .btn {
 }
 
 div.header > button {
-  background-color: rgb(53, 119, 167);
+  background-color: rgb(136, 164, 185);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
 div.header > button:hover {
-  background-color: rgb(255, 253, 38);
+  background-color: rgb(148, 171, 160);
+  box-shadow: 2px 2px 2px;
 }
 
 .welcome {
@@ -33,6 +35,7 @@ div.header > button:hover {
   padding: 10px;
   padding-bottom: 90px;
   padding-top: 90px;
+  border-radius: 14px;
 }
 
 .review {
@@ -41,6 +44,7 @@ div.header > button:hover {
   margin-bottom: auto;
   margin-top:10px;
   padding: 10px;
+  border-radius: 14px;
 }
 
 .nightMode {
