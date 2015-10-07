@@ -19,11 +19,9 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       'header': {
         templateUrl: 'partials/header.html',
       },
-      'sideBar': {
-        templateUrl: 'partials/sidebar.html',
-      },
       'body': {
         templateUrl: "partials/movies.html",
+        controller: 'MoviesCtrl'
       },
     }
   });
@@ -34,12 +32,9 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       'header': {
         templateUrl: 'partials/header.html',
       },
-      'sideBar': {
-        templateUrl: 'partials/sidebar.html',
-      },
       'body': {
         templateUrl: "partials/movies.reviews.html",
-        controller: 'StudentsCtrl'
+        controller: 'MoviesCtrl'
       },
     }
   });

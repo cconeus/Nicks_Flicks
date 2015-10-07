@@ -1,12 +1,15 @@
 <div class="row review">
-  <div class="col-md-4">
-    <div ui-view="sideBar"></div>
+  <div class="col-md-4" ng-show="movies.length">
+    <h4>Movie Reviews:</h4>
+      <li ng-repeat="item in movies">
+      <a ui-sref="movies.movieTitle({ movieId: item.id })">{{ item.movieTitle }}</a>
+      </li>
   </div>
     <div class="col-md-6 review">
       Some reviews
       <form ng-submit="FilmReviewsFactory.addReview()" class="form-group" role="form">
           <input type="text" ng-model="FilmReviewsFactory.reviewName" placeholder="Enter your review here..." class="form-control">
-          <button type="submit" class="btn btn-success">Submit Review</button>
+          <button type="submit" class="btn btn-success btn-sm">Submit Review</button>
       </form>
     </div>
 </div>

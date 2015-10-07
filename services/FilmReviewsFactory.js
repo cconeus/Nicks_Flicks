@@ -1,11 +1,20 @@
 nicksFlicks.factory('FilmReviewsFactory', function FilmReviewsFactory() {
   var factory = {};
-  factory.movies = [];
+  factory.movies = [{
+    movieTitle: "Braveheart",
+    reviews: "Some text about Braveheart",
+    movieId: 1
+  }];
 
-  factory.addMovie = function() {
-    factory.movies.push({ name: factory.movieName, id: factory.movies.length +1, reviews: [] });
-    factory.movieName = null;
-  };
+  factory.addReview = function() {
+    factory.movies.push({
+        movieTitle: factory.movieTitle,
+        body: factory.reviews,
+        movieId: factory.movies.length + 1
+    });
+    factory.movieTitle = null;
+    factory.reviews = null;
+};
 
   return factory;
 })
