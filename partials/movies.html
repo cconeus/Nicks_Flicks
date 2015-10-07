@@ -5,11 +5,11 @@
       <a ui-sref="movies.reviews({ movieId: item.movieId })">{{ item.movieTitle }}</a>
       </li>
   </div>
-    <div class="col-md-6 review">
+    <div class="col-md-6 review" align="center">
       Some reviews
       <form ng-submit="FilmReviewsFactory.addReview()" class="form-group" role="form">
-          <input type="text" ng-model="FilmReviewsFactory.movieTitle" placeholder="Review Title" class="form-control">
-          <input type="text" ng-model="FilmReviewsFactory.reviews" placeholder="Enter your review here..." class="form-control">
+          <input type="text" ng-model="FilmReviewsFactory.movieTitle" placeholder="Review Title" class="form-control"><br>
+          <textarea rows="4" cols="50" ng-model="FilmReviewsFactory.reviews" placeholder="Enter your review here..." class="form-control"></textarea><br>
           <button type="submit" class="btn btn-success btn-sm">Submit Review</button>
       </form>
     </div>

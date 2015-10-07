@@ -17,8 +17,9 @@ div.review > button, .btn {
 
 div.header > button {
   background-color: rgb(136, 164, 185);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 div.header > button:hover {
@@ -50,4 +51,11 @@ div.header > button:hover {
 .nightMode {
     -webkit-filter: invert(100%);
     background-color: rgb(41, 41, 41);
+}
+
+.fadeIn {
+  -webkit-animation-duration: 5s;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  -webkit-animiation-delay: 1.5s;
 }
