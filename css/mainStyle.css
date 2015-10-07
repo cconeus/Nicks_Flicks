@@ -1,8 +1,8 @@
 body {
   font-family: 'ABeeZee', sans-serif;
-  background-image: url(http://7-themes.com/data_images/out/61/6980749-balloons-house-in-up-movie.jpg);
+  background-color: rgb(201, 201, 201);
 }
-button, .btn {
+div.review > button, .btn {
   border-radius: 13px;
   background-color: rgb(100, 106, 161);
   margin: 2px;
@@ -12,7 +12,16 @@ button, .btn {
   border-bottom: double rgb(103, 112, 255) 2px;
   background-color: rgba(235, 243, 251, 0.6);
   padding-left: 10px;
-  padding-bottom: 8px;
+}
+
+div.header > button {
+  background-color: rgb(53, 119, 167);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+div.header > button:hover {
+  background-color: rgb(255, 253, 38);
 }
 
 .welcome {
@@ -34,6 +43,7 @@ button, .btn {
   padding: 10px;
 }
 
-.sideBar {
-  padding: 20px;
+.nightMode {
+    -webkit-filter: invert(100%);
+    align: right;
 }
