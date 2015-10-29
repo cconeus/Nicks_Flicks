@@ -34,7 +34,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       },
       'body': {
         templateUrl: "partials/movies.reviews.html",
-        controller: 'MoviesCtrl'
+        controller: 'ReviewsCtrl'
       },
     }
   });

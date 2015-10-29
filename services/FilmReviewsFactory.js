@@ -15,7 +15,7 @@ nicksFlicks.factory('FilmReviewsFactory', function FilmReviewsFactory() {
   factory.addReview = function() {
     factory.movies.push({
         movieTitle: factory.movieTitle,
-        body: factory.reviews,
+        reviews: factory.reviews,
         movieId: factory.movies.length + 1
     });
     factory.movieTitle = null;
